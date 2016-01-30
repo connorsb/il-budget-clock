@@ -1,26 +1,26 @@
 body {
 	font-family: 'Alegreya Sans', sans-serif;
 	margin: 0px;
-	background-color: #0000FF;
+	background-color: #1818C9;
 	color: #eee;
 	font-size: 20px;
 }
 
 .header {
     padding: 30px 0;
-    background-color: #FFD700;
+    background-color: #DEBC07;
     text-align:center;
 }
 
 .content {
-    background-color: #0000FF;
+    background-color: #1818C9;
     text-align:center;
     padding: 10px 50px;
 }
 
 .footer{
 	text-align: center;
-	background-color: #0000FF;
+	background-color: #1818C9;
 }
 
 .about {

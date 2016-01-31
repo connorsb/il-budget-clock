@@ -60,21 +60,17 @@
 
             var i = 0;
 
-            
 			var clock;
             updateClock();
-			var clock2;
-			updateClock2();
 
             setInterval(function(){
                 updateClock();
-				updateClock2();
             }, 1000);
 			
 			
 
             function updateClock(){
-                clock = moment().subtract(moment("June 30 2015 23:00:00")); <!--Wrong! This should be 11pm day before-->
+                clock = moment().subtract(moment("June 30 2015 23:00:00")); <!--Wrong! This should be 11pm day before (daylight savings)-->
                 $("#months").html(clock.get('month'));
                 $("#days").html(clock.get('date'));
                 $("#hours").html(clock.get('hour'));

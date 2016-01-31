@@ -15,7 +15,7 @@
         <meta property="og:type" content="website">
         <meta property="og:description" content="See how long Pennsylvania has been languishing without a budget, why it matters, & what you can do about it.">
         <meta property="og:url" content="http://pabudgetclock.com/">
-        <meta property="og:image" content="http://pabudgetclock.com/images/screengrab.jpg"> <!-- need this -->
+        <meta property="og:image" content="http://pabudgetclock.com/images/screengrab.jpg">
 
 
         <meta name="twitter:card" content="summary_large_image">
@@ -24,7 +24,7 @@
         <meta name="twitter:description" content="See how long Pennsylvania has been languishing without a budget, why it matters, & what you can do about it.">
         <meta name="twitter:title" content="Pennsylvania Budget Clock">
         <meta name="twitter:url" content="http://pabudgetclock.com/">
-        <meta name="twitter:image:src" content="http://pabudgetclock.com/images/screengrab.jpg"><!-- need this -->
+        <meta name="twitter:image:src" content="http://pabudgetclock.com/images/screengrab.jpg">
 
         
         <link rel="stylesheet" href="css/custom.css">
@@ -68,7 +68,7 @@
             }, 1000);
 
             function updateClock(){
-                clock = moment().subtract(moment("July 1 2015 4:00:00")); <!--UTC Offset is -5 for Chicago in the summer, so this is midnight. Changing it to 4 to reflect PA's -4 offset during the summer-->
+                clock = moment().subtract(moment("July 1 2015 1:00:00")); <!--Wrong! Turns out it's just localized - feel free to make this 1AM-->
                 $("#months").html(clock.get('month'));
                 $("#days").html(clock.get('date'));
                 $("#hours").html(clock.get('hour'));
